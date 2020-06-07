@@ -3,6 +3,8 @@
 Originally made for mc.emeraldcraft.com.ar & Discord.js but adapted to an universal function
 to work with arguments and return a decent object
 
+Requires: request-promise (https://www.npmjs.com/package/request-promise), didnt use the promise so you can remove it if you want
+
 */
 
 const dns = require('dns');
