@@ -3,6 +3,9 @@
 This is mainly used for Discord.js cooldowns but I guess you can
 change them for your needs
 
+/!\
+This is NOT efficient nor made for commands with long delays (+1 day), you might want a MySQL database for that!
+
 Requirements: 
 > discord.js@^12.2.0          (https://www.npmjs.com/package/discord.js)
 > humanize-duration@^3.23.1   (https://www.npmjs.com/package/humanize-duration)
