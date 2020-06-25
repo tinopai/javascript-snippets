@@ -33,11 +33,10 @@ client.on("message", m => {
       /* Cooldown */
       let cooldownT = 30 * 1000, cooldownG = cooldowns.others.prefix.get(m.author.id);
       if(cooldownG) return m.channel.send(`Please wait ${humd(cooldownG - Date.now(), { round: true })} before running ${command} again`);
-      cooldowns.others.prefix.set(m.author.id, Date.now() + cooldownT);
-      setTimeout(() => cooldowns.others.prefix.delete(m.author.id), cooldownT);
-            
       /* Actual command */
       // .. your command code ..
+      cooldowns.others.prefix.set(m.author.id, Date.now() + cooldownT);
+      setTimeout(() => cooldowns.others.prefix.delete(m.author.id), cooldownT);
     }
 })
 
